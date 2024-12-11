@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "udemyClone_backend": {
+      "main": "src/udemyClone_backend/main.mo",
+      "type": "motoko"
+    },
+    "udemyClone_frontend": {
+      "dependencies": [
+        "udemyClone_backend"
+      ],
+      "source": [
+        "src/udemyClone_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "udemyClone_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
