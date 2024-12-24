@@ -4,6 +4,20 @@
       "main": "src/udemyClone_backend/main.mo",
       "type": "motoko"
     },
+ 
+    
+    "campaign" : {
+
+      "main": "src/campaign/submain.mo",
+      "type": "motoko"
+    },
+    
+
+  "tokenProject_backend": {
+      "main": "src/tokenProject_backend/main.mo",
+      "type": "motoko"
+    },
+    
     "udemyClone_frontend": {
       "dependencies": [
         "udemyClone_backend"
@@ -15,6 +29,13 @@
       "workspace": "udemyClone_frontend"
     }
   },
+
+  "dependencies": {
+    "token_project": {
+      "canister_id": "c5kvi-uuaaa-aaaaa-qaaia-cai"
+    }
+  },
+
   "defaults": {
     "build": {
       "args": "",

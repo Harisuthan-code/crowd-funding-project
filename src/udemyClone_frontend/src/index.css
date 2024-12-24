@@ -1,0 +1,895 @@
+/* Header Container */
+
+*{
+
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.headerpart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #1a1a2e; /* Dark Blue Shade */
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif; /* Modern Font */
+    width: 100%;
+  }
+  
+  /* Logo */
+  .headerpart img {
+    height: 60px;
+    cursor: pointer;
+  }
+
+  .fa-solid.fa-magnifying-glass{
+
+    display: none;
+  }
+  
+  /* Search Section */
+  .input-part {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    opacity: 0;
+    max-width: 0;
+    overflow: hidden;
+  }
+  
+  .input-part input {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 14px;
+    outline: none;
+    width: 250px;
+    background-color: #f1f1f1;
+    color: #333;
+    font-family: inherit;
+  }
+  
+  .input-part button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff4c60; /* Eye-catching Red */
+    color: white;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: inherit;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .input-part button:hover {
+    background-color: #e04355;
+  }
+  
+  /* Show Search */
+  .input-part.showinput {
+    max-width: 300px;
+    opacity: 1;
+  }
+  
+  /* Navigation Links */
+  .headerpart p {
+    margin: 0 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  
+  .headerpart p:hover {
+    color: #ff4c60;
+    font-weight: bold;
+  }
+  
+  /* Icons */
+  .headerpart i {
+    font-size: 22px;
+    margin-left: 15px;
+    cursor: pointer;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .headerpart i:hover {
+    color: #ff4c60;
+  }
+
+  /* Footer Container */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #1a1a2e; /* Dark Blue Shade */
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    border-top: 2px solid #ff4c60; /* Accent Border */
+    flex-wrap: wrap;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+ 
+  }
+  
+  /* Footer Links */
+  .footer p {
+    margin: 5px 10px;
+    cursor: pointer;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+  }
+  
+  .footer p:hover {
+    color: #ff4c60; /* Highlight color */
+    font-weight: bold;
+  }
+  
+  /* Copyright Text */
+  .footer p:last-child {
+    flex: 1 100%; /* Takes full width on smaller screens */
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #b0b0b0; /* Subtle text color */
+    margin-right: 5rem;
+  }
+
+  /* Main Container */
+.firstpart {
+    display: flex;
+    flex-direction: row; /* Horizontally align the boxes */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #f8f9fa; /* Light neutral background */
+    gap: 20px;
+  }
+  
+  /* Box1 - Background Image */
+  .box1 {
+    flex: 1; /* Takes equal space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ 
+.box1 img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-width: 1000px; /* Max width for larger screens */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    object-fit: cover;
+  }
+  
+  
+  /* Box2 - Buttons Section */
+  .box2 {
+    flex: 1; /* Takes equal space */
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box2 button {
+    padding: 15px 25px;
+    background-color: #ff4c60; /* Bold red color */
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .fa-regular.fa-bell{
+
+    margin-right: 10rem;
+  }
+
+  .box2 a{
+
+    color: white;
+    text-decoration: none;
+  }
+  
+  .box2 button:hover {
+    background-color: #e04355;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+
+  .content{
+
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+
+  /* Main Container */
+.secondpart {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f5f5f5; /* Light neutral background */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 600px; /* Restrict width for better readability */
+    margin: 0 auto; /* Center the component */
+    margin-top: 5rem;
+    
+  }
+  
+  /* Description Text */
+  .secondpart p {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+    text-align: left;
+    line-height: 1.5;
+    margin: 0;
+  }
+  
+  /* Button Container */
+  .secondpart .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  /* Icons Style */
+  .secondpart .btn i {
+    font-size: 24px;
+    color: #ff4c60; /* Accent color */
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.3s ease;
+  }
+  
+  .secondpart .btn i:hover {
+    color: #e04355;
+    transform: scale(1.2); /* Slight zoom effect on hover */
+  }
+  
+  /* Image Style */
+  .secondpart img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    object-fit: cover;
+  }
+
+
+  /* Main Container */
+.thirdpart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 20px;
+    background: url("/public/fontbackground.webp");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 90vw; /* Full viewport width */
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+  }
+  
+  /* Box 1 - Full Width */
+  .box_1 {
+    width: 100%; /* Full width of the container */
+    height: 300px; /* Adjusted for better visibility */
+    background:url('your-image-url.jpg'); /* Add the background image */  
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: cover; /* Ensure the image fully covers the area */
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 20px;
+  }
+  
+  /* Box 1 Text Styling */
+  .box_1 p {
+    color: white;
+    margin-bottom: 10rem;
+  }
+  
+  /* Arrow Icons */
+  .thirdpart i {
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+
+  }
+  
+  /* Box 2 */
+  .box_2 {
+    width: 100%; /* Full width */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .box_2 p {
+    margin: 0;
+    color: #333;
+  }
+  
+  .leftbox{
+
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    padding-top: 2px;
+    margin-top: 10rem;
+
+  }
+
+  .leftbox a{
+
+    margin-top: 2rem;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 30px;
+    transition: 0.2s;
+    width: 300px;
+    height: 300px;
+    color: black;
+    background-color: #1a1a2e;
+    text-align: center;
+    line-height: 300px;
+  }
+
+  .leftbox .createcampaign{
+
+    background-image: url("/public/Create.webp");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .leftbox .profilesetting{
+    background-image: url("/public/profile.webp");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+
+  }
+
+  .leftbox .donation{
+
+    background-image: url("./public/Donation.webp");
+      background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .leftbox .status{
+
+    background-image: url("/public/status.webp");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+  }
+
+  .leftbox a:hover{
+
+    color: transparent;
+    transform: scaleX(0.9);
+  }
+
+  .campaignsetting {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    margin: 2rem auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.campaignsetlist label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.campaignsetlist input,
+.campaignsetlist select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.campaignsetlist button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff4c60;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.campaignsetlist button:hover {
+    background-color: #e04355;
+}
+
+.profileset {
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #1a1a2e;
+  margin-bottom: 20px;
+}
+
+.infoaboutperson {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.infoaboutperson label {
+  font-weight: bold;
+  color: #333;
+}
+
+.infoaboutperson input[type="name"],
+.infoaboutperson input[type="text"],
+.infoaboutperson input[type="email"],
+.infoaboutperson input[type="file"],
+.infoaboutperson input[type="location"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+}
+
+.infoaboutperson input[type="file"] {
+  padding: 8px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #ff4c60;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+button:hover {
+  background-color: #e04355;
+}
+
+ul {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+ul li button {
+  background-color: #ff4c60;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ul li button:hover {
+  background-color: #e04355;
+}
+
+h2 {
+  color: #1a1a2e;
+  margin-bottom: 10px;
+}
+
+.infoaboutperson input[type="text"]:focus,
+.infoaboutperson input[type="email"]:focus,
+.infoaboutperson input[type="file"]:focus {
+  outline: none;
+  border-color: #ff4c60;
+}
+
+.fullfundpart{
+
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.fundpart .content p{
+
+  margin-top: 30px;
+}
+
+.campaignstatus{
+
+  gap: 16px;
+  padding: 20px;
+  margin-top: 30px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  width: 400px;
+
+
+}
+
+.allcampaign{
+  gap: 16px;
+  padding: 20px;
+  margin-top: 30px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  width: 400px;
+  height: auto;
+
+}
+.allcampaign p{
+
+  margin-top: 30px;
+}
+
+.allcampaign button{
+
+  margin-top: 5rem;
+}
+
+.allcampaign input{
+
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  margin-top: 30px;
+
+
+}
+
+.campaignstatus p{
+
+  margin-top: 30px;
+}
+
+.fundpart {
+  gap: 16px;
+  padding: 20px;
+  margin-top: 30px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  width: 400px;
+}
+
+.fundpart h1 {
+  flex: 1 1 100%;
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+}
+
+.fundpart p {
+  flex: 1 1 calc(33.33% - 16px);
+  font-size: 16px;
+  text-align: center;
+  color: #555;
+}
+
+
+.porject-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px 15px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.sub-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4a90e2;
+}
+
+.img-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #4a90e2;
+  margin-bottom: 15px;
+}
+
+.transfer-cls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.transfer-cls input {
+  padding: 12px 15px;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.transfer-cls button {
+  padding: 12px 20px;
+  margin-top: 15px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.transfer-cls button:hover {
+  background: #357abf;
+}
+
+button {
+  padding: 12px 20px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: #357abf;
+}
+
+.claim, .balance-class, .transfer-cls {
+  width: 90%;
+  max-width: 400px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  margin-top: 30px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.result {
+  font-size: 1rem;
+  text-align: left;
+  color: #666;
+  padding: 10px;
+}
+
+
+.in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.in input {
+  padding: 12px 15px;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.in button {
+  padding: 12px 20px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+  
+  
+  /* Responsiveness */
+  @media screen and (max-width: 768px) {
+    .headerpart {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+    }
+  
+    .input-part {
+      max-width: 100%;
+    }
+
+    .headerpart i{
+
+        margin-top: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+      }
+    
+      .footer p {
+        margin: 5px 0;
+      }
+
+    .homecontent {
+      flex-direction: column; /* Stack boxes vertically on small screens */
+      gap: 30px;
+    }
+
+    .firstpart{
+
+    background: url("/public/fontbackground.webp");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+    }
+  
+    .box1 img {
+        display: none;
+      }
+
+    .box2 button{
+
+        width: 200px;
+        margin-right: 7rem;
+    }
+    
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        background-color: #1a1a2e; /* Reapply footer background color */
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+    }
+
+
+
+    .leftbox {
+        flex-direction: column;
+        align-items: center;   
+        margin-top: 80px;
+        margin-left: 30px;
+        gap: 15px;   
+        padding: 10px 15px;          
+      }
+    
+      .leftbox a {
+        margin-left: 0;       
+        margin-top: 0;     
+      }
+
+      .campaignsetting {
+        padding: 15px;
+    }
+    .campaignsetlist label {
+        font-size: 14px;
+    }
+    .campaignsetlist input,
+    .campaignsetlist select {
+        font-size: 12px;
+    }
+    .campaignsetlist button {
+        font-size: 14px;
+    }
+    
+
+
+
+    
+
+
+  }
+  
+  

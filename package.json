@@ -14,5 +14,11 @@
   "type": "module",
   "workspaces": [
     "src/udemyClone_frontend"
-  ]
+  ],
+  "dependencies": {
+    "axios": "^1.7.9",
+    "ipfs-http-client": "^60.0.1",
+    "react-hook-form": "^7.54.1",
+    "react-router-dom": "^7.0.2"
+  }
 }

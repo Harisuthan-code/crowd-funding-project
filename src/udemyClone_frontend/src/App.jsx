@@ -1,31 +1,46 @@
-import { useState } from 'react';
-import { udemyClone_backend } from 'declarations/udemyClone_backend';
+import React from "react";
+import Header from "./Header";
+import Footer from "./Footer";
+import Homecontent from "./Homecontent";
+import { BrowserRouter as Router , Routes , Route } from "react-router-dom";
+import Dashboard from "./Dashboard";
+import Check from "./setcompaign";
+import Profilesetting from "./Profilesettings";
+import Fund from "./Fund";
+import Campaignstatus from "./campaignstatus";
+import Allcampaign from "./allcampaign";
 
-function App() {
-  const [greeting, setGreeting] = useState('');
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    const name = event.target.elements.name.value;
-    udemyClone_backend.greet(name).then((greeting) => {
-      setGreeting(greeting);
-    });
-    return false;
-  }
+function App(){
 
-  return (
-    <main>
-      <img src="/logo2.svg" alt="DFINITY logo" />
-      <br />
-      <br />
-      <form action="#" onSubmit={handleSubmit}>
-        <label htmlFor="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
-      </form>
-      <section id="greeting">{greeting}</section>
-    </main>
-  );
+
+    return(
+
+        <Router>
+            <div>
+                <Header />
+                <Routes>
+                    <Route path="/" element={<Homecontent />} />
+                    <Route path="/allcompaign" element = {<Allcampaign/>}></Route>
+                    <Route path="/dashboard" element = {<Dashboard/>}></Route>
+                    <Route path="/create" element = {<Check/>}></Route>
+                    <Route path="/profilesetting" element = {<Profilesetting/>}></Route>
+                    <Route path="/donatehistory" element = {<Fund/>}></Route>
+                    <Route path="/compaignstatus" element = {<Campaignstatus/>}></Route>
+
+
+
+
+
+                </Routes>
+            </div>
+        </Router>
+
+    )
+
+
+
 }
 
-export default App;
+
+export default App
